@@ -29,7 +29,7 @@ public class AlipayController {
 		String payment = request.getAttribute("payment").toString();
 		AlipayClient alipayClient = new
 				DefaultAlipayClient("https://openapi.alipaydev.com/gateway.do",
-				"2016080900198765",
+				"app_id",
 				"应用私钥",
 				"json","utf-8",
 				"支付宝公钥",
@@ -74,7 +74,7 @@ public class AlipayController {
 //			throws IOException {
 //		AlipayClient alipayClient = new
 //				DefaultAlipayClient("https://openapi.alipaydev.com/gateway.do",
-//				"2016080900198765",
+//				"app_id",
 //				"应用私钥",
 //				"json","utf-8",
 //				"支付宝公钥",
